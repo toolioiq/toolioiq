@@ -20,6 +20,18 @@ export default function GeneratorsPage() {
             Generate strong secure passwords instantly.
           </p>
         </Link>
+        <Link
+          href="/generators/random-number-generator"
+          className="border rounded-xl p-6 hover:bg-gray-50"
+>
+          <h2 className="text-xl font-semibold">
+            Random Number Generator
+          </h2>
+
+          <p>
+            Generate random numbers between any range.
+          </p>
+        </Link>
       </div>
     </main>
   );
