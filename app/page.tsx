@@ -1,28 +1,6 @@
 import Link from "next/link";
 import ToolSearch from "@/components/ToolSearch";
-
-const popularTools = [
-  {
-    title: "Age Calculator",
-    href: "/calculators/age-calculator",
-    description: "Calculate your exact age in years, months, and days.",
-  },
-  {
-    title: "Mortgage Calculator",
-    href: "/calculators/mortgage-calculator",
-    description: "Estimate monthly mortgage payments and interest.",
-  },
-  {
-    title: "Password Generator",
-    href: "/generators/password-generator",
-    description: "Generate strong secure passwords instantly.",
-  },
-  {
-    title: "Word Counter",
-    href: "/word-tools/word-counter",
-    description: "Count words, characters, and sentences.",
-  },
-];
+import FeaturedTools from "@/components/FeaturedTools";
 
 export default function Home() {
   return (
@@ -85,22 +63,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="max-w-6xl mx-auto px-6 pb-20">
-        <h2 className="text-3xl font-bold mb-8">Popular Tools</h2>
-
-        <div className="grid md:grid-cols-2 gap-6">
-          {popularTools.map((tool) => (
-            <Link
-              key={tool.href}
-              href={tool.href}
-              className="border rounded-xl p-6 hover:bg-gray-50"
-            >
-              <h3 className="text-xl font-semibold mb-2">{tool.title}</h3>
-              <p className="text-gray-600">{tool.description}</p>
-            </Link>
-          ))}
-        </div>
-      </section>
+      <FeaturedTools />
     </main>
   );
 }
