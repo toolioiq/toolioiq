@@ -24,6 +24,9 @@ export default function Navbar() {
           <Link href="/word-tools" className="hover:text-gray-600">
             Word Tools
           </Link>
+          <Link href="/tools" className="hover:text-gray-600">
+            All Tools
+          </Link>
         </div>
       </div>
     </nav>
