@@ -13,6 +13,13 @@ export default function WordToolsPage() {
           <h2 className="text-xl font-semibold">Word Counter</h2>
           <p>Count words, characters, and sentences instantly.</p>
         </Link>
+        <Link
+          href="/word-tools/character-counter"
+          className="border rounded-xl p-6 hover:bg-gray-50"
+        >
+          <h2 className="text-xl font-semibold">Character Counter</h2>
+          <p>Count characters, words, and paragraphs instantly.</p>
+        </Link>
       </div>
     </main>
   );
