@@ -55,6 +55,13 @@ export default function CalculatorsPage() {
           <h2 className="text-xl font-semibold">Mortgage Calculator</h2>
           <p>Estimate monthly mortgage payments and total interest.</p>
         </Link>
+        <Link
+          href="/calculators/loan-calculator"
+          className="border rounded-xl p-6 hover:bg-gray-50"
+        >
+          <h2 className="text-xl font-semibold">Loan Calculator</h2>
+          <p>Estimate monthly loan payments and total interest.</p>
+        </Link>     
       </div>
     </main>
   );
