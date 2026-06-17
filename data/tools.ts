@@ -1,0 +1,74 @@
+export const tools = [
+  {
+    title: "Age Calculator",
+    href: "/calculators/age-calculator",
+    category: "Calculators",
+    description: "Calculate your exact age in years, months, and days.",
+  },
+  {
+    title: "BMI Calculator",
+    href: "/calculators/bmi-calculator",
+    category: "Calculators",
+    description: "Calculate your body mass index.",
+  },
+  {
+    title: "Percentage Calculator",
+    href: "/calculators/percentage-calculator",
+    category: "Calculators",
+    description: "Calculate percentages quickly and easily.",
+  },
+  {
+    title: "GPA Calculator",
+    href: "/calculators/gpa-calculator",
+    category: "Calculators",
+    description: "Calculate your grade point average.",
+  },
+  {
+    title: "Compound Interest Calculator",
+    href: "/calculators/compound-interest-calculator",
+    category: "Calculators",
+    description: "Estimate future value and interest earned over time.",
+  },
+  {
+    title: "Mortgage Calculator",
+    href: "/calculators/mortgage-calculator",
+    category: "Calculators",
+    description: "Estimate monthly mortgage payments and total interest.",
+  },
+  {
+    title: "Loan Calculator",
+    href: "/calculators/loan-calculator",
+    category: "Calculators",
+    description: "Estimate monthly loan payments and total interest.",
+  },
+  {
+    title: "Savings Calculator",
+    href: "/calculators/savings-calculator",
+    category: "Calculators",
+    description: "Estimate savings growth with monthly contributions.",
+  },
+  {
+    title: "Password Generator",
+    href: "/generators/password-generator",
+    category: "Generators",
+    description: "Generate strong secure passwords instantly.",
+  },
+  {
+    title: "Random Number Generator",
+    href: "/generators/random-number-generator",
+    category: "Generators",
+    description: "Generate random numbers between any range.",
+  },
+  {
+    title: "Word Counter",
+    href: "/word-tools/word-counter",
+    category: "Word Tools",
+    description: "Count words, characters, and sentences instantly.",
+  },
+  {
+    title: "Character Counter",
+    href: "/word-tools/character-counter",
+    category: "Word Tools",
+    description: "Count characters, words, and paragraphs instantly.",
+  },
+];

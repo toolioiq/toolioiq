@@ -2,69 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-
-const tools = [
-  {
-    title: "Age Calculator",
-    href: "/calculators/age-calculator",
-    category: "Calculators",
-  },
-  {
-    title: "BMI Calculator",
-    href: "/calculators/bmi-calculator",
-    category: "Calculators",
-  },
-  {
-    title: "Percentage Calculator",
-    href: "/calculators/percentage-calculator",
-    category: "Calculators",
-  },
-  {
-    title: "GPA Calculator",
-    href: "/calculators/gpa-calculator",
-    category: "Calculators",
-  },
-  {
-    title: "Compound Interest Calculator",
-    href: "/calculators/compound-interest-calculator",
-    category: "Calculators",
-  },
-  {
-    title: "Mortgage Calculator",
-    href: "/calculators/mortgage-calculator",
-    category: "Calculators",
-  },
-  {
-    title: "Loan Calculator",
-    href: "/calculators/loan-calculator",
-    category: "Calculators",
-  },
-  {
-    title: "Savings Calculator",
-    href: "/calculators/savings-calculator",
-    category: "Calculators",
-  },
-  {
-    title: "Password Generator",
-    href: "/generators/password-generator",
-    category: "Generators",
-  },
-  {
-    title: "Random Number Generator",
-    href: "/generators/random-number-generator",
-    category: "Generators",
-  },
-  {
-    title: "Word Counter",
-    href: "/word-tools/word-counter",
-    category: "Word Tools",
-  },
-  {
-    title: "Character Counter",
-    href: "/word-tools/character-counter",
-    category: "Word Tools",
-  },
-];
+import { tools } from "@/data/tools";
 
 export default function ToolSearch() {
   const [query, setQuery] = useState("");
