@@ -34,6 +34,13 @@ export default function CalculatorsPage() {
           <h2 className="text-xl font-semibold">Percentage Calculator</h2>
           <p>Calculate percentages quickly and easily.</p>
         </Link>
+        <Link
+          href="/calculators/gpa-calculator"
+          className="border rounded-xl p-6 hover:bg-gray-50"
+>
+          <h2 className="text-xl font-semibold">GPA Calculator</h2>
+          <p>Calculate your grade point average from grades and credits.</p>
+        </Link>
       </div>
     </main>
   );
