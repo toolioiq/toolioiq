@@ -1,101 +1,51 @@
-"use client";
+import type { Metadata } from "next";
+import AgeCalculator from "@/components/AgeCalculator";
 
-import { useState } from "react";
-
-type AgeResult = {
-  years: number;
-  months: number;
-  days: number;
+export const metadata: Metadata = {
+  title: "Age Calculator | ToolioIQ",
+  description:
+    "Calculate your exact age in years, months, and days with ToolioIQ's free age calculator.",
 };
 
 export default function AgeCalculatorPage() {
-  const [birthDate, setBirthDate] = useState("");
-  const [result, setResult] = useState<AgeResult | null>(null);
-  const [error, setError] = useState("");
-
-  const calculateAge = () => {
-    setError("");
-    setResult(null);
-
-    if (!birthDate) {
-      setError("Please select your birth date.");
-      return;
-    }
-
-    const birth = new Date(birthDate);
-    const today = new Date();
-
-    if (birth > today) {
-      setError("Birth date cannot be in the future.");
-      return;
-    }
-
-    let years = today.getFullYear() - birth.getFullYear();
-    let months = today.getMonth() - birth.getMonth();
-    let days = today.getDate() - birth.getDate();
-
-    if (days < 0) {
-      months--;
-      const previousMonth = new Date(
-        today.getFullYear(),
-        today.getMonth(),
-        0
-      );
-      days += previousMonth.getDate();
-    }
-
-    if (months < 0) {
-      years--;
-      months += 12;
-    }
-
-    setResult({ years, months, days });
-  };
-
   return (
     <main className="max-w-3xl mx-auto px-6 py-20">
       <h1 className="text-4xl font-bold mb-4">Age Calculator</h1>
 
       <p className="text-gray-600 mb-8">
-        Calculate your exact age in years, months, and days.
+        Use this free age calculator to find your exact age in years, months,
+        and days based on your date of birth.
       </p>
 
-      <div className="border rounded-2xl p-6 space-y-4">
-        <label className="block font-medium">
-          Enter your birth date
-        </label>
+      <AgeCalculator />
 
-        <input
-          type="date"
-          value={birthDate}
-          onChange={(e) => setBirthDate(e.target.value)}
-          className="border rounded-lg p-3 w-full"
-        />
+      <section className="mt-12 space-y-6">
+        <div>
+          <h2 className="text-2xl font-bold mb-2">How to use this age calculator</h2>
+          <p>
+            Select your birth date, then click the Calculate Age button. The tool
+            will instantly show your current age in years, months, and days.
+          </p>
+        </div>
 
-        <button
-          onClick={calculateAge}
-          className="bg-black text-white px-6 py-3 rounded-lg"
-        >
-          Calculate Age
-        </button>
+        <div>
+          <h2 className="text-2xl font-bold mb-2">What is an age calculator?</h2>
+          <p>
+            An age calculator is a simple tool that determines how much time has
+            passed between a birth date and today’s date.
+          </p>
+        </div>
 
-        {error && (
-          <p className="text-red-600 font-medium">{error}</p>
-        )}
+        <div>
+          <h2 className="text-2xl font-bold mb-2">Frequently Asked Questions</h2>
 
-        {result && (
-          <div className="bg-gray-50 border rounded-xl p-6">
-            <h2 className="text-2xl font-bold mb-2">
-              Your Age
-            </h2>
+          <h3 className="font-semibold mt-4">Is this age calculator free?</h3>
+          <p>Yes. This age calculator is free to use.</p>
 
-            <p className="text-xl">
-              {result.years} years, {result.months} months,
-              and {result.days} days
-            </p>
-          </div>
-        )}
-      </div>
+          <h3 className="font-semibold mt-4">Does it calculate months and days?</h3>
+          <p>Yes. It calculates your age in years, months, and days.</p>
+        </div>
+      </section>
     </main>
   );
 }
