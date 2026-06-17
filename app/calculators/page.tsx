@@ -61,6 +61,13 @@ export default function CalculatorsPage() {
         >
           <h2 className="text-xl font-semibold">Loan Calculator</h2>
           <p>Estimate monthly loan payments and total interest.</p>
+        </Link>
+        <Link
+          href="/calculators/savings-calculator"
+          className="border rounded-xl p-6 hover:bg-gray-50"
+        >
+          <h2 className="text-xl font-semibold">Savings Calculator</h2>
+          <p>Estimate savings growth with monthly contributions and interest.</p>
         </Link>     
       </div>
     </main>
