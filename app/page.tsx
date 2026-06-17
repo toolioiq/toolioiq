@@ -1,4 +1,5 @@
 import Link from "next/link";
+import ToolSearch from "@/components/ToolSearch";
 
 const popularTools = [
   {
@@ -43,6 +44,8 @@ export default function Home() {
           >
             Explore Tools
           </Link>
+
+          <ToolSearch />
         </div>
       </section>
 
