@@ -15,8 +15,44 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "ToolioIQ",
-  description: "Smart calculators, converters, generators, and word tools.",
+  metadataBase: new URL("https://toolioiq.com"),
+
+  title: {
+    default: "ToolioIQ",
+    template: "%s | ToolioIQ",
+  },
+
+  description:
+    "Free calculators, generators, and word tools designed to help you get quick answers fast.",
+
+  keywords: [
+    "calculator",
+    "online calculator",
+    "mortgage calculator",
+    "age calculator",
+    "BMI calculator",
+    "password generator",
+    "word counter",
+    "character counter",
+    "free tools",
+  ],
+
+  openGraph: {
+    title: "ToolioIQ",
+    description:
+      "Free calculators, generators, and word tools designed to help you get quick answers fast.",
+    url: "https://toolioiq.com",
+    siteName: "ToolioIQ",
+    locale: "en_US",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "ToolioIQ",
+    description:
+      "Free calculators, generators, and word tools designed to help you get quick answers fast.",
+  },
 };
 
 export default function RootLayout({
