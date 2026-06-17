@@ -48,14 +48,17 @@ export default function Home() {
             </p>
           </Link>
 
-          <div className="border rounded-xl p-6">
+          <Link
+            href="/word-tools"
+            className="border rounded-xl p-6 hover:bg-gray-50"
+          >
             <h2 className="font-bold text-lg mb-2">
               Word Tools
             </h2>
             <p>
               Scramblers, counters, and text utilities.
             </p>
-          </div>
+          </Link>
 
         </div>
       </section>
