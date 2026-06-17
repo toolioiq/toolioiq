@@ -25,6 +25,10 @@ export const metadata: Metadata = {
   description:
     "Free calculators, generators, and word tools designed to help you get quick answers fast.",
 
+  icons: {
+    icon: "/favicon.png",
+  },
+
   keywords: [
     "calculator",
     "online calculator",
