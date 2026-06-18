@@ -89,4 +89,10 @@ export const tools = [
   category: "Calculators",
   description: "Calculate the new value after a percentage decrease.",
   },
+  {
+  title: "Temperature Converter",
+  href: "/converters/temperature-converter",
+  category: "Converters",
+  description: "Convert Celsius, Fahrenheit, and Kelvin temperatures.",
+  },
 ];
