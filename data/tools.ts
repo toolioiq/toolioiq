@@ -136,4 +136,11 @@ export const tools = [
   description:
     "Convert miles per hour, kilometers per hour, meters per second, feet per second, and knots.",
   },
+  {
+  title: "Time Converter",
+  href: "/converters/time-converter",
+  category: "Converters",
+  description:
+    "Convert milliseconds, seconds, minutes, hours, days, weeks, months, and years.",
+  },
 ];
