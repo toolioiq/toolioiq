@@ -115,4 +115,11 @@ export const tools = [
   category: "Converters",
   description: "Convert length, weight, and temperature units in one place.",
   },
+  {
+  title: "Area Converter",
+  href: "/converters/area-converter",
+  category: "Converters",
+  description:
+    "Convert square meters, square feet, acres, square miles, and more.",
+  },
 ];
