@@ -122,4 +122,11 @@ export const tools = [
   description:
     "Convert square meters, square feet, acres, square miles, and more.",
   },
+  {
+  title: "Volume Converter",
+  href: "/converters/volume-converter",
+  category: "Converters",
+  description:
+    "Convert liters, milliliters, gallons, cups, pints, quarts, and more.",
+  },
 ];
