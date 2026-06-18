@@ -102,4 +102,11 @@ export const tools = [
   description:
     "Convert millimeters, centimeters, meters, kilometers, inches, feet, yards, and miles.",
   },
+  {
+  title: "Weight Converter",
+  href: "/converters/weight-converter",
+  category: "Converters",
+  description:
+    "Convert kilograms, pounds, grams, ounces, stone, and tons.",
+  },
 ];
