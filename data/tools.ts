@@ -150,4 +150,11 @@ export const tools = [
   description:
     "Convert bits, bytes, kilobytes, megabytes, gigabytes, terabytes, and binary storage units.",
   },
+  {
+  title: "Currency Converter",
+  href: "/converters/currency-converter",
+  category: "Converters",
+  description:
+    "Convert popular currencies using live exchange rates.",
+  },
 ];
