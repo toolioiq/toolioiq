@@ -129,4 +129,11 @@ export const tools = [
   description:
     "Convert liters, milliliters, gallons, cups, pints, quarts, and more.",
   },
+  {
+  title: "Speed Converter",
+  href: "/converters/speed-converter",
+  category: "Converters",
+  description:
+    "Convert miles per hour, kilometers per hour, meters per second, feet per second, and knots.",
+  },
 ];
