@@ -83,4 +83,10 @@ export const tools = [
   category: "Calculators",
   description: "Calculate the new value after a percentage increase.",
   },
+  {
+  title: "Percentage Decrease Calculator",
+  href: "/calculators/percentage-decrease-calculator",
+  category: "Calculators",
+  description: "Calculate the new value after a percentage decrease.",
+  },
 ];
