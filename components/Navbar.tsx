@@ -35,6 +35,7 @@ export default function Navbar() {
           <Link href="/word-tools" className="hover:text-gray-600">
             Word Tools
           </Link>
+          <Link href="/converters">Converters</Link>
         </div>
       </div>
     </nav>
