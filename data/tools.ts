@@ -109,4 +109,10 @@ export const tools = [
   description:
     "Convert kilograms, pounds, grams, ounces, stone, and tons.",
   },
+  {
+  title: "Unit Converter",
+  href: "/converters/unit-converter",
+  category: "Converters",
+  description: "Convert length, weight, and temperature units in one place.",
+  },
 ];
