@@ -143,4 +143,11 @@ export const tools = [
   description:
     "Convert milliseconds, seconds, minutes, hours, days, weeks, months, and years.",
   },
+  {
+  title: "Data Storage Converter",
+  href: "/converters/data-storage-converter",
+  category: "Converters",
+  description:
+    "Convert bits, bytes, kilobytes, megabytes, gigabytes, terabytes, and binary storage units.",
+  },
 ];
