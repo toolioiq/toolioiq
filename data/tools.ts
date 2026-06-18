@@ -95,4 +95,11 @@ export const tools = [
   category: "Converters",
   description: "Convert Celsius, Fahrenheit, and Kelvin temperatures.",
   },
+  {
+  title: "Length Converter",
+  href: "/converters/length-converter",
+  category: "Converters",
+  description:
+    "Convert millimeters, centimeters, meters, kilometers, inches, feet, yards, and miles.",
+  },
 ];
