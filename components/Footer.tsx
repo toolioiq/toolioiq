@@ -42,6 +42,10 @@ export default function Footer() {
               >
                 Word Tools
               </Link>
+              <Link href="/about">About</Link>
+              <Link href="/contact">Contact</Link>
+              <Link href="/privacy-policy">Privacy Policy</Link>
+              <Link href="/terms">Terms</Link>
             </div>
           </div>
 

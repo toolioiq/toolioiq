@@ -2,42 +2,51 @@
 
 import { useState } from "react";
 
+type Unit = {
+  label: string;
+  base: number;
+};
+
+const lengthUnits: Record<string, Unit> = {
+  millimeters: { label: "Millimeters", base: 0.001 },
+  centimeters: { label: "Centimeters", base: 0.01 },
+  meters: { label: "Meters", base: 1 },
+  kilometers: { label: "Kilometers", base: 1000 },
+  inches: { label: "Inches", base: 0.0254 },
+  feet: { label: "Feet", base: 0.3048 },
+  yards: { label: "Yards", base: 0.9144 },
+  miles: { label: "Miles", base: 1609.344 },
+};
+
+const weightUnits: Record<string, Unit> = {
+  milligrams: { label: "Milligrams", base: 0.000001 },
+  grams: { label: "Grams", base: 0.001 },
+  kilograms: { label: "Kilograms", base: 1 },
+  metricTons: { label: "Metric Tons", base: 1000 },
+  ounces: { label: "Ounces", base: 0.028349523125 },
+  pounds: { label: "Pounds", base: 0.45359237 },
+  stone: { label: "Stone", base: 6.35029318 },
+  usTons: { label: "US Tons", base: 907.18474 },
+};
+
+const temperatureUnits: Record<string, { label: string }> = {
+  celsius: { label: "Celsius" },
+  fahrenheit: { label: "Fahrenheit" },
+  kelvin: { label: "Kelvin" },
+};
+
 const unitGroups = {
   length: {
     label: "Length",
-    units: {
-      millimeters: { label: "Millimeters", base: 0.001 },
-      centimeters: { label: "Centimeters", base: 0.01 },
-      meters: { label: "Meters", base: 1 },
-      kilometers: { label: "Kilometers", base: 1000 },
-      inches: { label: "Inches", base: 0.0254 },
-      feet: { label: "Feet", base: 0.3048 },
-      yards: { label: "Yards", base: 0.9144 },
-      miles: { label: "Miles", base: 1609.344 },
-    },
+    units: lengthUnits,
   },
-
   weight: {
     label: "Weight",
-    units: {
-      milligrams: { label: "Milligrams", base: 0.000001 },
-      grams: { label: "Grams", base: 0.001 },
-      kilograms: { label: "Kilograms", base: 1 },
-      metricTons: { label: "Metric Tons", base: 1000 },
-      ounces: { label: "Ounces", base: 0.028349523125 },
-      pounds: { label: "Pounds", base: 0.45359237 },
-      stone: { label: "Stone", base: 6.35029318 },
-      usTons: { label: "US Tons", base: 907.18474 },
-    },
+    units: weightUnits,
   },
-
   temperature: {
     label: "Temperature",
-    units: {
-      celsius: { label: "Celsius" },
-      fahrenheit: { label: "Fahrenheit" },
-      kelvin: { label: "Kelvin" },
-    },
+    units: temperatureUnits,
   },
 };
 
@@ -55,6 +64,7 @@ export default function UnitConverter() {
 
   const resetUnits = (newCategory: Category) => {
     const unitKeys = Object.keys(unitGroups[newCategory].units);
+
     setCategory(newCategory);
     setFromUnit(unitKeys[0]);
     setToUnit(unitKeys[1] || unitKeys[0]);
@@ -103,10 +113,12 @@ export default function UnitConverter() {
       return;
     }
 
-    const from = currentUnits[fromUnit as keyof typeof currentUnits];
-    const to = currentUnits[toUnit as keyof typeof currentUnits];
+    const units = category === "length" ? lengthUnits : weightUnits;
 
-    if (!("base" in from) || !("base" in to)) {
+    const from = units[fromUnit];
+    const to = units[toUnit];
+
+    if (!from || !to) {
       setError("Invalid unit selection.");
       return;
     }
@@ -189,11 +201,9 @@ export default function UnitConverter() {
           <h2 className="text-2xl font-bold mb-2">Conversion Result</h2>
 
           <p className="text-xl">
-            {value}{" "}
-            {currentUnits[fromUnit as keyof typeof currentUnits].label} ={" "}
+            {value} {currentUnits[fromUnit].label} ={" "}
             <strong>
-              {result.toLocaleString()}{" "}
-              {currentUnits[toUnit as keyof typeof currentUnits].label}
+              {result.toLocaleString()} {currentUnits[toUnit].label}
             </strong>
           </p>
         </div>

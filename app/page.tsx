@@ -71,7 +71,41 @@ export default function Home() {
           </Link>
         </div>
       </section>
+      <section className="max-w-6xl mx-auto px-6 pb-20">
+        <h2 className="text-3xl font-bold mb-8">
+          Latest Tools
+        </h2>
 
+        <div className="grid md:grid-cols-2 gap-6">
+          <Link
+            href="/converters/volume-converter"
+            className="border rounded-xl p-6 hover:bg-gray-50"
+      >
+            Volume Converter
+          </Link>
+
+          <Link
+            href="/converters/area-converter"
+            className="border rounded-xl p-6 hover:bg-gray-50"
+      >
+            Area Converter
+          </Link>
+
+          <Link
+            href="/converters/unit-converter"
+            className="border rounded-xl p-6 hover:bg-gray-50"
+      >
+            Unit Converter
+          </Link>
+
+          <Link
+            href="/converters/weight-converter"
+            className="border rounded-xl p-6 hover:bg-gray-50"
+      >
+            Weight Converter
+          </Link>
+        </div>
+      </section>
       <FeaturedTools />
     </main>
   );
