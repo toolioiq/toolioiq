@@ -77,4 +77,10 @@ export const tools = [
   category: "Calculators",
   description: "Calculate sale prices and savings after a discount.",
   },
+  {
+  title: "Percentage Increase Calculator",
+  href: "/calculators/percentage-increase-calculator",
+  category: "Calculators",
+  description: "Calculate the new value after a percentage increase.",
+  },
 ];
