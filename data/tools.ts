@@ -71,4 +71,10 @@ export const tools = [
     category: "Word Tools",
     description: "Count characters, words, and paragraphs instantly.",
   },
+  {
+  title: "Discount Calculator",
+  href: "/calculators/discount-calculator",
+  category: "Calculators",
+  description: "Calculate sale prices and savings after a discount.",
+  },
 ];
