@@ -4,6 +4,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Script from "next/script";
+import SiteStructuredData from "@/components/SiteStructuredData";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -85,6 +86,7 @@ export default function RootLayout({
             gtag('config', 'G-558034Q37Z');
           `}
         </Script>
+        <SiteStructuredData />
         <Navbar />
 
         <main className="flex-grow">
