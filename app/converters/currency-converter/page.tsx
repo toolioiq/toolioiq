@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import CurrencyConverter from "@/components/CurrencyConverter";
 import CalculatorPageLayout from "@/components/CalculatorPageLayout";
+import BreadcrumbStructuredData from "@/components/BreadcrumbStructuredData";
 
 export const metadata: Metadata = {
   title: "Currency Converter | ToolioIQ",
@@ -70,7 +71,18 @@ export default function CurrencyConverterPage() {
           description: "Calculate percentages quickly and easily.",
         },
       ]}
+      
     >
+    <BreadcrumbStructuredData
+        items={[
+            { name: "Home", url: "https://toolioiq.com" },
+            { name: "Converters", url: "https://toolioiq.com/converters" },
+            {
+            name: "Currency Converter",
+            url: "https://toolioiq.com/converters/currency-converter",
+            },
+        ]}
+    />
       <CurrencyConverter />
     </CalculatorPageLayout>
   );
