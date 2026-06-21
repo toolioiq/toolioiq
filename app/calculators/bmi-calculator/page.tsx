@@ -19,6 +19,30 @@ export default function BmiCalculatorPage() {
           Calculate BMI. The tool will show your BMI and general category.
         </p>
       }
+      breadcrumbItems={[
+      { name: "Home", url: "https://toolioiq.com" },
+      { name: "Calculators", url: "https://toolioiq.com/calculators" },
+      {
+        name: "BMI Calculator",
+        url: "https://toolioiq.com/calculators/bmi-calculator",
+      },
+    ]}
+    faqItems={[
+      {
+        question: "Is this BMI calculator free?",
+        answer: "Yes. This BMI calculator is free to use.",
+      },
+      {
+        question: "What does BMI mean?",
+        answer:
+          "BMI stands for Body Mass Index. It is a simple estimate based on height and weight.",
+      },
+      {
+        question: "Is BMI a medical diagnosis?",
+        answer:
+          "No. BMI is only a general screening estimate and should not replace professional medical advice.",
+      },
+  ]}
       explanation={
         <p>
           BMI stands for body mass index. It is a simple estimate based on height
