@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import CurrencyConverter from "@/components/CurrencyConverter";
 import CalculatorPageLayout from "@/components/CalculatorPageLayout";
 import BreadcrumbStructuredData from "@/components/BreadcrumbStructuredData";
+import FAQStructuredData from "@/components/FAQStructuredData";
 
 export const metadata: Metadata = {
   title: "Currency Converter | ToolioIQ",
@@ -83,6 +84,25 @@ export default function CurrencyConverterPage() {
             },
         ]}
     />
+
+    <FAQStructuredData
+        items={[
+            {
+            question: "Is this currency converter free?",
+            answer: "Yes. This currency converter is free to use.",
+            },
+            {
+            question: "Are the exchange rates live?",
+            answer:
+                "The converter uses recent exchange rates from Frankfurter. Rates are updated regularly but may not reflect real-time market prices.",
+            },
+            {
+            question: "Should I use this for financial decisions?",
+            answer:
+                "This tool is for informational purposes only. Always verify rates with your bank, broker, or payment provider before making financial decisions.",
+            },
+        ]}
+        />
       <CurrencyConverter />
     </CalculatorPageLayout>
   );
