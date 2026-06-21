@@ -19,6 +19,31 @@ export default function PercentageCalculatorPage() {
           enter 20 and 150 to find 20% of 150.
         </p>
       }
+      breadcrumbItems={[
+      { name: "Home", url: "https://toolioiq.com" },
+      { name: "Calculators", url: "https://toolioiq.com/calculators" },
+      {
+        name: "Percentage Calculator",
+        url: "https://toolioiq.com/calculators/percentage-calculator",
+      },
+    ]}
+    faqItems={[
+      {
+        question: "Is this percentage calculator free?",
+        answer: "Yes. This percentage calculator is free to use.",
+      },
+      {
+        question: "What does this calculator solve?",
+        answer:
+          "It calculates what a given percentage of a number equals.",
+      },
+      {
+        question: "Can I use it for discounts and taxes?",
+        answer:
+          "Yes. You can use it for discounts, taxes, tips, schoolwork, and everyday percentage calculations.",
+      },
+    ]}
+
       explanation={
         <p>
           A percentage is a value expressed as a fraction of 100. Percentages
