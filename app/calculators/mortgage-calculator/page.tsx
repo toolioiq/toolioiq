@@ -19,6 +19,30 @@ export default function MortgageCalculatorPage() {
           Calculate Mortgage to estimate your monthly payment.
         </p>
       }
+      breadcrumbItems={[
+      { name: "Home", url: "https://toolioiq.com" },
+      { name: "Calculators", url: "https://toolioiq.com/calculators" },
+      {
+        name: "Mortgage Calculator",
+        url: "https://toolioiq.com/calculators/mortgage-calculator",
+      },
+    ]}
+    faqItems={[
+      {
+        question: "Is this mortgage calculator free?",
+        answer: "Yes. This mortgage calculator is free to use.",
+      },
+      {
+        question: "Does this include taxes and insurance?",
+        answer:
+          "No. This version estimates principal and interest only. Property taxes, insurance, and other fees are not included.",
+      },
+      {
+        question: "Can I use this to estimate a monthly mortgage payment?",
+        answer:
+          "Yes. Enter the loan amount, interest rate, and loan term to estimate the monthly payment.",
+      },
+    ]}
       explanation={
         <p>
           A mortgage calculator estimates the monthly payment required to repay a
