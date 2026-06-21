@@ -19,6 +19,30 @@ export default function AgeCalculatorPage() {
           will instantly show your current age in years, months, and days.
         </p>
       }
+      breadcrumbItems={[
+      { name: "Home", url: "https://toolioiq.com" },
+      { name: "Calculators", url: "https://toolioiq.com/calculators" },
+      {
+        name: "Age Calculator",
+        url: "https://toolioiq.com/calculators/age-calculator",
+      },
+    ]}
+    faqItems={[
+      {
+        question: "Is this age calculator free?",
+        answer: "Yes. This age calculator is free to use.",
+      },
+      {
+        question: "Can I calculate my exact age?",
+        answer:
+          "Yes. This calculator can estimate your age in years, months, and days based on your date of birth.",
+      },
+      {
+        question: "Can I use a future date?",
+        answer:
+          "No. The calculator is designed to calculate age from a past birth date.",
+      },
+    ]}
       explanation={
         <p>
           An age calculator determines how much time has passed between a birth
