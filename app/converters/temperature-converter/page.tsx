@@ -19,6 +19,30 @@ export default function TemperatureConverterPage() {
           the unit you want to convert to, then click Convert Temperature.
         </p>
       }
+      breadcrumbItems={[
+        { name: "Home", url: "https://toolioiq.com" },
+        { name: "Converters", url: "https://toolioiq.com/converters" },
+        {
+            name: "Temperature Converter",
+            url: "https://toolioiq.com/converters/temperature-converter",
+        },
+      ]}
+        faqItems={[
+        {
+            question: "Is this temperature converter free?",
+            answer: "Yes. This temperature converter is free to use.",
+        },
+        {
+            question: "Can I convert Celsius to Fahrenheit?",
+            answer:
+            "Yes. You can convert Celsius to Fahrenheit, Fahrenheit to Celsius, Celsius to Kelvin, Kelvin to Celsius, and more.",
+        },
+        {
+            question: "Does this converter support Kelvin?",
+            answer:
+            "Yes. This temperature converter supports Celsius, Fahrenheit, and Kelvin.",
+        },
+      ]}
       explanation={
         <p>
           A temperature converter helps you quickly convert temperature values
