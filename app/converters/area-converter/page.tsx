@@ -19,6 +19,30 @@ export default function AreaConverterPage() {
           you want to convert to, then click Convert Area.
         </p>
       }
+      breadcrumbItems={[
+        { name: "Home", url: "https://toolioiq.com" },
+        { name: "Converters", url: "https://toolioiq.com/converters" },
+        {
+          name: "Area Converter",
+          url: "https://toolioiq.com/converters/area-converter",
+        },
+      ]}
+      faqItems={[
+        {
+          question: "Is this area converter free?",
+          answer: "Yes. This area converter is free to use.",
+        },
+        {
+          question: "Does this support acres and square feet?",
+          answer:
+            "Yes. It supports square millimeters, square centimeters, square meters, square kilometers, square inches, square feet, square yards, acres, and square miles.",
+        },
+        {
+          question: "Can I convert square meters to square feet?",
+          answer:
+            "Yes. Select Square Meters as the starting unit and Square Feet as the target unit.",
+        },
+      ]}
       explanation={
         <p>
           An area converter helps you quickly convert surface measurements for
