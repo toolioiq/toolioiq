@@ -19,6 +19,30 @@ export default function DataStorageConverterPage() {
           the unit you want to convert to, then click Convert Storage.
         </p>
       }
+      breadcrumbItems={[
+        { name: "Home", url: "https://toolioiq.com" },
+        { name: "Converters", url: "https://toolioiq.com/converters" },
+        {
+            name: "Data Storage Converter",
+            url: "https://toolioiq.com/converters/data-storage-converter",
+        },
+      ]}
+        faqItems={[
+        {
+            question: "Is this data storage converter free?",
+            answer: "Yes. This data storage converter is free to use.",
+        },
+        {
+            question: "What is the difference between KB and KiB?",
+            answer:
+            "KB uses a decimal base of 1,000 bytes, while KiB uses a binary base of 1,024 bytes.",
+        },
+        {
+            question: "Can I convert gigabytes to megabytes?",
+            answer:
+            "Yes. Select Gigabytes as the starting unit and Megabytes as the target unit.",
+        },
+      ]}
       explanation={
         <p>
           A data storage converter helps you compare file sizes, storage
