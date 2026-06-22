@@ -19,6 +19,30 @@ export default function VolumeConverterPage() {
           unit you want to convert to, then click Convert Volume.
         </p>
       }
+      breadcrumbItems={[
+        { name: "Home", url: "https://toolioiq.com" },
+        { name: "Converters", url: "https://toolioiq.com/converters" },
+        {
+            name: "Volume Converter",
+            url: "https://toolioiq.com/converters/volume-converter",
+        },
+      ]}
+        faqItems={[
+        {
+            question: "Is this volume converter free?",
+            answer: "Yes. This volume converter is free to use.",
+        },
+        {
+            question: "Can I convert liters to gallons?",
+            answer:
+            "Yes. Select Liters as the starting unit and Gallons as the target unit.",
+        },
+        {
+            question: "Does this support cooking measurements?",
+            answer:
+            "Yes. It supports teaspoons, tablespoons, fluid ounces, cups, pints, quarts, and gallons.",
+        },
+      ]}
       explanation={
         <p>
           A volume converter helps you quickly convert liquid and space
