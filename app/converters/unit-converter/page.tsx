@@ -19,6 +19,30 @@ export default function UnitConverterPage() {
           from, select the unit you want to convert to, then click Convert Unit.
         </p>
       }
+      breadcrumbItems={[
+        { name: "Home", url: "https://toolioiq.com" },
+        { name: "Converters", url: "https://toolioiq.com/converters" },
+        {
+          name: "Unit Converter",
+          url: "https://toolioiq.com/converters/unit-converter",
+        },
+      ]}
+      faqItems={[
+        {
+          question: "Is this unit converter free?",
+          answer: "Yes. This unit converter is free to use.",
+        },
+        {
+          question: "What units does this converter support?",
+          answer:
+            "It currently supports length, weight, and temperature conversions. More categories can be added later.",
+        },
+        {
+          question: "Can I convert metric and imperial units?",
+          answer:
+            "Yes. You can convert between metric and imperial units for supported categories such as length and weight.",
+        },
+      ]}
       explanation={
         <p>
           A unit converter helps you quickly convert measurements across
