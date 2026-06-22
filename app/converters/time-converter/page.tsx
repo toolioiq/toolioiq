@@ -19,6 +19,30 @@ export default function TimeConverterPage() {
           unit you want to convert to, then click Convert Time.
         </p>
       }
+      breadcrumbItems={[
+        { name: "Home", url: "https://toolioiq.com" },
+        { name: "Converters", url: "https://toolioiq.com/converters" },
+        {
+            name: "Time Converter",
+            url: "https://toolioiq.com/converters/time-converter",
+        },
+      ]}
+        faqItems={[
+        {
+            question: "Is this time converter free?",
+            answer: "Yes. This time converter is free to use.",
+        },
+        {
+            question: "Can I convert hours to minutes?",
+            answer:
+            "Yes. Select Hours as the starting unit and Minutes as the target unit.",
+        },
+        {
+            question: "How are months and years calculated?",
+            answer:
+            "Months and years are approximate because calendar months and leap years can vary.",
+        },
+      ]}
       explanation={
         <p>
           A time converter helps you quickly convert time units for scheduling,
