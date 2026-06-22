@@ -19,6 +19,30 @@ export default function SpeedConverterPage() {
           you want to convert to, then click Convert Speed.
         </p>
       }
+      breadcrumbItems={[
+        { name: "Home", url: "https://toolioiq.com" },
+        { name: "Converters", url: "https://toolioiq.com/converters" },
+        {
+            name: "Speed Converter",
+            url: "https://toolioiq.com/converters/speed-converter",
+        },
+      ]}
+        faqItems={[
+        {
+            question: "Is this speed converter free?",
+            answer: "Yes. This speed converter is free to use.",
+        },
+        {
+            question: "Can I convert miles per hour to kilometers per hour?",
+            answer:
+            "Yes. Select Miles per Hour as the starting unit and Kilometers per Hour as the target unit.",
+        },
+        {
+            question: "Does this support knots?",
+            answer:
+            "Yes. It supports knots, which are commonly used in aviation and boating.",
+        },
+      ]}
       explanation={
         <p>
           A speed converter helps you quickly convert speed measurements for
