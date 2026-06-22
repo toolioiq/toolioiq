@@ -20,6 +20,30 @@ export default function WeightConverterPage() {
           Convert Weight.
         </p>
       }
+      breadcrumbItems={[
+        { name: "Home", url: "https://toolioiq.com" },
+        { name: "Converters", url: "https://toolioiq.com/converters" },
+        {
+          name: "Weight Converter",
+          url: "https://toolioiq.com/converters/weight-converter",
+        },
+      ]}
+      faqItems={[
+        {
+          question: "Is this weight converter free?",
+          answer: "Yes. This weight converter is free to use.",
+        },
+        {
+          question: "Does it support kilograms and pounds?",
+          answer:
+            "Yes. It supports kilograms, pounds, grams, ounces, stone, metric tons, and US tons.",
+        },
+        {
+          question: "Can I convert pounds to kilograms?",
+          answer:
+            "Yes. Select Pounds as the starting unit and Kilograms as the target unit.",
+        },
+      ]}
       explanation={
         <p>
           A weight converter helps you quickly convert between
