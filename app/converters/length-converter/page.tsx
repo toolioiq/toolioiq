@@ -19,6 +19,30 @@ export default function LengthConverterPage() {
           unit you want to convert to, then click Convert Length.
         </p>
       }
+      breadcrumbItems={[
+        { name: "Home", url: "https://toolioiq.com" },
+        { name: "Converters", url: "https://toolioiq.com/converters" },
+        {
+          name: "Length Converter",
+          url: "https://toolioiq.com/converters/length-converter",
+        },
+      ]}
+      faqItems={[
+        {
+          question: "Is this length converter free?",
+          answer: "Yes. This length converter is free to use.",
+        },
+        {
+          question: "Does it support metric and imperial units?",
+          answer:
+            "Yes. It supports millimeters, centimeters, meters, kilometers, inches, feet, yards, and miles.",
+        },
+        {
+          question: "Can I convert centimeters to inches?",
+          answer:
+            "Yes. Select Centimeters as the starting unit and Inches as the target unit.",
+        },
+      ]}
       explanation={
         <p>
           A length converter helps you quickly convert measurements between
