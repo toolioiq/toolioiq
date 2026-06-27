@@ -40,7 +40,17 @@ export default function Home() {
               Finance, health, education, and everyday calculators.
             </p>
           </Link>
-
+          
+          <Link
+            href="/converters"
+            className="border rounded-xl p-6 hover:bg-gray-50"
+          >
+            <h3 className="text-xl font-semibold mb-2">Converters</h3>
+            <p className="text-gray-600">
+              Temperature, length, weight, volume, speed, time, currency, and unit conversions.
+            </p>
+          </Link>
+          
           <Link
             href="/generators"
             className="border rounded-xl p-6 hover:bg-gray-50"

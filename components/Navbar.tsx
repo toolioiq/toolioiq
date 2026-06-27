@@ -32,6 +32,10 @@ export default function Navbar() {
             Calculators
           </Link>
 
+          <Link href="/converters" className="hover:text-gray-600">
+            Converters
+          </Link>
+
           <Link href="/generators" className="hover:text-gray-600">
             Generators
           </Link>
