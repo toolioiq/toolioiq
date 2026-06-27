@@ -20,27 +20,27 @@ export default function Navbar() {
         </Link>
 
         <div className="flex gap-6 text-sm font-medium">
-          <Link href="/" className="hover:text-gray-600">
+          <Link href="/" className="hover:text-blue-600 transition-colors">
             Home
           </Link>
 
-          <Link href="/tools" className="hover:text-gray-600">
+          <Link href="/tools" className="hover:text-blue-600 transition-colors">
             All Tools
           </Link>
 
-          <Link href="/calculators" className="hover:text-gray-600">
+          <Link href="/calculators" className="hover:text-blue-600 transition-colors">
             Calculators
           </Link>
 
-          <Link href="/converters" className="hover:text-gray-600">
+          <Link href="/converters" className="hover:text-blue-600 transition-colors">
             Converters
           </Link>
 
-          <Link href="/generators" className="hover:text-gray-600">
+          <Link href="/generators" className="hover:text-blue-600 transition-colors">
             Generators
           </Link>
 
-          <Link href="/word-tools" className="hover:text-gray-600">
+          <Link href="/word-tools" className="hover:text-blue-600 transition-colors">
             Word Tools
           </Link>
           <Link href="/converters">Converters</Link>

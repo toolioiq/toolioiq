@@ -60,7 +60,7 @@ export default function PercentageCalculator() {
       {result !== null && (
         <div className="bg-gray-50 border rounded-xl p-6 space-y-2 text-gray-900">
           <h2 className="text-2xl font-bold mb-2">Result</h2>
-          <p className="text-xl">
+          <p className="text-2xl font-bold text-black">
             {percent}% of {number} is <strong>{result}</strong>
           </p>
         </div>

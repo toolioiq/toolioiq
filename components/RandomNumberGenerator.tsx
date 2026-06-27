@@ -86,7 +86,7 @@ export default function RandomNumberGenerator() {
             Random Number
           </h2>
 
-          <p className="text-4xl font-bold">
+          <p className="text-2xl font-bold text-black">
             {result}
           </p>
         </div>
