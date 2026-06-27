@@ -57,7 +57,7 @@ export default function PasswordGenerator() {
       </button>
 
       {password && (
-        <div className="bg-gray-50 border rounded-xl p-6">
+        <div className="bg-gray-50 border rounded-xl p-6 space-y-2 text-gray-900">
           <h2 className="font-bold mb-2">
             Generated Password
           </h2>

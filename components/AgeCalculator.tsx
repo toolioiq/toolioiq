@@ -69,9 +69,9 @@ export default function AgeCalculator() {
       {error && <p className="text-red-600 font-medium">{error}</p>}
 
       {result && (
-        <div className="bg-gray-50 border rounded-xl p-6">
+        <div className="bg-gray-50 border rounded-xl p-6 space-y-2 text-gray-900">
           <h2 className="text-2xl font-bold mb-2">Your Age</h2>
-          <p className="text-xl">
+          <p className="text-xl text-gray-900">
             {result.years} years, {result.months} months, and {result.days} days
           </p>
         </div>

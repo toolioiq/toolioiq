@@ -58,7 +58,7 @@ export default function PercentageCalculator() {
       {error && <p className="text-red-600 font-medium">{error}</p>}
 
       {result !== null && (
-        <div className="bg-gray-50 border rounded-xl p-6">
+        <div className="bg-gray-50 border rounded-xl p-6 space-y-2 text-gray-900">
           <h2 className="text-2xl font-bold mb-2">Result</h2>
           <p className="text-xl">
             {percent}% of {number} is <strong>{result}</strong>
