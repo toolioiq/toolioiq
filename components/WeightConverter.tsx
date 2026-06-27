@@ -147,7 +147,7 @@ export default function WeightConverter() {
             Conversion Result
           </h2>
 
-          <p className="text-xl text-gray-900">
+          <p className="text-2xl font-bold text-black">
             {value} {weightUnits[fromUnit].label} ={" "}
             <strong>
               {result.toLocaleString()}{" "}
