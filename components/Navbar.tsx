@@ -19,31 +19,30 @@ export default function Navbar() {
           />
         </Link>
 
-        <div className="flex gap-6 text-sm font-medium">
-          <Link href="/" className="hover:text-blue-600 transition-colors">
+        <div className="flex gap-6 text-sm font-bold text-black">
+          <Link href="/" className="text-black hover:text-blue-600 transition-colors">
             Home
           </Link>
 
-          <Link href="/tools" className="hover:text-blue-600 transition-colors">
+          <Link href="/tools" className="text-black hover:text-blue-600 transition-colors">
             All Tools
           </Link>
 
-          <Link href="/calculators" className="hover:text-blue-600 transition-colors">
+          <Link href="/calculators" className="text-black hover:text-blue-600 transition-colors">
             Calculators
           </Link>
 
-          <Link href="/converters" className="hover:text-blue-600 transition-colors">
+          <Link href="/converters" className="text-black hover:text-blue-600 transition-colors">
             Converters
           </Link>
 
-          <Link href="/generators" className="hover:text-blue-600 transition-colors">
+          <Link href="/generators" className="text-black hover:text-blue-600 transition-colors">
             Generators
           </Link>
 
-          <Link href="/word-tools" className="hover:text-blue-600 transition-colors">
+          <Link href="/word-tools" className="text-black hover:text-blue-600 transition-colors">
             Word Tools
           </Link>
-          <Link href="/converters">Converters</Link>
         </div>
       </div>
     </nav>
